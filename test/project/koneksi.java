@@ -25,9 +25,9 @@ public class koneksi {
             // database - oprek_kkp
             // username - admin
             // password - admin
-            String urlDB = "jdbc:mysql://localhost:3306/oprek_kkp?useSSL=false";
-            String userDB = "admin";
-            String passDB = "admin";
+            String urlDB = "jdbc:mysql://localhost:3306/project_manager?useSSL=false";
+            String userDB = "root";
+            String passDB = "";
             mySQLConnection = DriverManager.getConnection(urlDB, userDB, passDB);
         } catch (Exception e) {
             System.out.print(e.getMessage());
