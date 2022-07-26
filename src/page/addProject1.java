@@ -16,12 +16,12 @@ import modul.koneksi;
  *
  * @author Budi Utomo
  */
-public class addProject extends javax.swing.JFrame {
+public class addProject1 extends javax.swing.JFrame {
 
     /**
      * Creates new form addProject
      */
-    public addProject() {
+    public addProject1() {
         initComponents();
         load_table();
     }
@@ -223,13 +223,13 @@ public class addProject extends javax.swing.JFrame {
     private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new loginPage().setVisible(true);
+        new loginPage1().setVisible(true);
     }//GEN-LAST:event_btnHomeActionPerformed
 
     private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new homePage().setVisible(true);
+        new homePage1().setVisible(true);
     }//GEN-LAST:event_btnReturnActionPerformed
 
     private void btnTambahActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnTambahActionPerformed
@@ -332,25 +332,27 @@ public class addProject extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(addProject.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(addProject1.class.getName()).log(java.util.logging.Level.SEVERE, null,
                     ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(addProject.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(addProject1.class.getName()).log(java.util.logging.Level.SEVERE, null,
                     ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(addProject.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(addProject1.class.getName()).log(java.util.logging.Level.SEVERE, null,
                     ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(addProject.class.getName()).log(java.util.logging.Level.SEVERE, null,
+            java.util.logging.Logger.getLogger(addProject1.class.getName()).log(java.util.logging.Level.SEVERE, null,
                     ex);
         }
+        // </editor-fold>
+        // </editor-fold>
         // </editor-fold>
         // </editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new addProject().setVisible(true);
+                new addProject1().setVisible(true);
             }
         });
     }

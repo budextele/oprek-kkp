@@ -9,12 +9,12 @@ package page;
  *
  * @author Budi Utomo
  */
-public class homePage extends javax.swing.JFrame {
+public class homePage1 extends javax.swing.JFrame {
 
     /**
      * Creates new form homePage
      */
-    public homePage() {
+    public homePage1() {
         initComponents();
     }
 
@@ -87,13 +87,13 @@ public class homePage extends javax.swing.JFrame {
     private void btnAddProjectActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddProjectActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new addProject().setVisible(true);
+        new addProject1().setVisible(true);
     }//GEN-LAST:event_btnAddProjectActionPerformed
 
     private void btnHomePageActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnHomePageActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new loginPage().setVisible(true);
+        new loginPage1().setVisible(true);
     }// GEN-LAST:event_btnHomePageActionPerformed
 
     /**
@@ -117,21 +117,23 @@ public class homePage extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(homePage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(homePage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        // </editor-fold>
+        // </editor-fold>
         // </editor-fold>
         // </editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new homePage().setVisible(true);
+                new homePage1().setVisible(true);
             }
         });
     }

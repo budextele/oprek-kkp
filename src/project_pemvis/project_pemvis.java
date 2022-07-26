@@ -18,7 +18,7 @@ public class project_pemvis {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        loginPage login = new loginPage();
+        loginPage1 login = new loginPage1();
         login.setVisible(true);
     }
 
