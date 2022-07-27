@@ -22,6 +22,14 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import project.koneksi;
 
+//import itext docment
+import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import java.io.FileOutputStream;
+
 /**
  *
  * @author Budi Utomo
@@ -47,6 +55,7 @@ public class uploadGambar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -59,6 +68,7 @@ public class uploadGambar extends javax.swing.JFrame {
         btnReset = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableImg = new javax.swing.JTable();
+        btnCetak = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -111,6 +121,13 @@ public class uploadGambar extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(tableImg);
 
+        btnCetak.setText("cetak pdf");
+        btnCetak.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCetakActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,7 +155,10 @@ public class uploadGambar extends javax.swing.JFrame {
                                                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE,
                                                         javax.swing.GroupLayout.DEFAULT_SIZE,
                                                         javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(152, 152, 152)))));
+                                                .addGap(40, 40, 40)
+                                                .addComponent(btnCetak, javax.swing.GroupLayout.PREFERRED_SIZE, 89,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(23, 23, 23)))));
         layout.setVerticalGroup(
                 layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addGroup(layout.createSequentialGroup()
@@ -157,12 +177,64 @@ public class uploadGambar extends javax.swing.JFrame {
                                                         javax.swing.GroupLayout.DEFAULT_SIZE,
                                                         javax.swing.GroupLayout.PREFERRED_SIZE)))
                                 .addGap(18, 18, 18)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                        javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnCetak))
                                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnCetakActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnCetakActionPerformed
+        // TODO add your handling code here:
+        try {
+            String file_name = "D:\\test-pdf.pdf";
+
+            // create a document object
+            Document document = new Document();
+            PdfWriter.getInstance(document, new FileOutputStream(file_name));
+
+            document.open();
+            // make centre paragraf
+            Paragraph p = new Paragraph("Hello World");
+            p.setAlignment(Element.ALIGN_CENTER);
+            document.add(p);
+            // ad null paragraf
+            document.add(new Paragraph("\n"));
+
+            try {
+                java.sql.Connection conn = (Connection) koneksi.getKoneksi();
+                java.sql.Statement stm = conn.createStatement();
+                String sql = "SELECT id,file_name FROM tes";
+                java.sql.ResultSet res = stm.executeQuery(sql);
+                PdfPTable table = new PdfPTable(res.getMetaData().getColumnCount());
+                for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                    System.out.println(res.getMetaData().getColumnName(i));
+                    table.addCell(res.getMetaData().getColumnName(i));
+                }
+
+                while (res.next()) {
+                    for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                        table.addCell(res.getString(i));
+                    }
+                }
+                document.add(table);
+
+                JOptionPane.showMessageDialog(null, "data dari database berhasil di export ke pdf");
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "data dari database gagal di export ke pdf");
+            }
+
+            document.close();
+            JOptionPane.showMessageDialog(null, "PDF berhasil dibuat");
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            JOptionPane.showMessageDialog(null, "PDF gagal dibuat");
+        }
+
+    }// GEN-LAST:event_btnCetakActionPerformed
 
     private void tableImgMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_tableImgMouseClicked
         // TODO add your handling code here:
@@ -312,6 +384,7 @@ public class uploadGambar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCetak;
     private javax.swing.JButton btnPilih;
     private javax.swing.JButton btnReset;
     private javax.swing.JButton btnUpload;
