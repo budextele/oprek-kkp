@@ -222,6 +222,11 @@ public class uploadGambar extends javax.swing.JFrame {
                 }
                 document.add(table);
 
+                String fileName = "D:\\tes-img.png";
+                // Image image = Image.getInstance(fileName);
+                com.itextpdf.text.Image image = com.itextpdf.text.Image.getInstance(fileName);
+                document.add(image);
+
                 JOptionPane.showMessageDialog(null, "data dari database berhasil di export ke pdf");
             } catch (Exception e) {
                 JOptionPane.showMessageDialog(null, "data dari database gagal di export ke pdf");
