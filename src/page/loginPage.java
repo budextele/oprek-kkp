@@ -15,12 +15,12 @@ import javax.swing.JOptionPane;
  *
  * @author Budi Utomo
  */
-public class loginPage1 extends javax.swing.JFrame {
+public class loginPage extends javax.swing.JFrame {
 
     /**
      * Creates new form loginPage
      */
-    public loginPage1() {
+    public loginPage() {
         initComponents();
     }
 
@@ -162,7 +162,7 @@ public class loginPage1 extends javax.swing.JFrame {
             if (rs.next()) {
                 // if user & pass is true go to homepage
                 dispose(); // close page login
-                homePage1 hpage = new homePage1();
+                homePage hpage = new homePage();
                 hpage.show();
             } else {
                 // if wrong
@@ -202,14 +202,26 @@ public class loginPage1 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(loginPage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(loginPage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(loginPage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(loginPage1.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(loginPage.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
+        // </editor-fold>
         // </editor-fold>
         // </editor-fold>
         // </editor-fold>
@@ -218,7 +230,7 @@ public class loginPage1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new loginPage1().setVisible(true);
+                new loginPage().setVisible(true);
             }
         });
     }
