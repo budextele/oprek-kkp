@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import javax.swing.JOptionPane;
+import modul.koneksi;
 
 /**
  *
@@ -136,17 +137,10 @@ public class loginPage extends javax.swing.JFrame {
     private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnLoginActionPerformed
         // TODO add your handling code here:
         // login
+        java.sql.Connection con;
         try {
             // openconnection
-            DriverManager.registerDriver(new com.mysql.jdbc.Driver());
-            // database - oprek_kkp
-            // username - admin
-            // password - admin
-            String urlDB = "jdbc:mysql://localhost:3306/oprek_kkp?useSSL=false";
-            String userDB = "admin";
-            String passDB = "admin";
-            Connection con = DriverManager.getConnection(urlDB, userDB, passDB);
-
+            con = (Connection) koneksi.getKoneksi();
             // accectp user & pass
             // user password ada di table akun db.oprek_kkp
             String username = editUsername.getText();
@@ -154,7 +148,7 @@ public class loginPage extends javax.swing.JFrame {
 
             Statement stm = con.createStatement();
             // mysql query to run
-            String sql = "select * from akun where username='" + username + "' and password='" + password + "';";
+            String sql = "select * from login where username='" + username + "' and password='" + password + "';";
             // akun = table
             // id, username, password
             ResultSet rs = stm.executeQuery(sql);
