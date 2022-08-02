@@ -156,8 +156,10 @@ public class loginPage extends javax.swing.JFrame {
             if (rs.next()) {
                 // if user & pass is true go to homepage
                 dispose(); // close page login
-                homePage hpage = new homePage();
-                hpage.show();
+//                homePage hpage = new homePage();
+//                hpage.show();
+                  dashboard_ui dashboard = new dashboard_ui();
+                  dashboard.show();
             } else {
                 // if wrong
                 JOptionPane.showMessageDialog(this, "wrong credential");
