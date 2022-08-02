@@ -4,6 +4,8 @@
  */
 package page;
 
+import page.loginPage;
+
 /**
  *
  * @author Budi Utomo
