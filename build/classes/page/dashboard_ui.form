@@ -50,33 +50,35 @@
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                          <Group type="102" alignment="1" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="jdaftar_proyek" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jtimeline" alignment="1" min="-2" pref="148" max="-2" attributes="0"/>
-                                  <Component id="jreport" alignment="1" min="-2" pref="148" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="32767" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="jmaintance" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jbast" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="jdaftar_teknisi" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <EmptySpace pref="111" max="-2" attributes="0"/>
-                              <Component id="jdashboard" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="jhome" min="-2" pref="84" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
-                          <Component id="jhalaman_report" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="124" max="-2" attributes="0"/>
+                          <Component id="btnHalamanReport" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="83" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Group type="102" alignment="1" attributes="0">
+                                  <Group type="103" groupAlignment="0" attributes="0">
+                                      <Component id="btnDaftarProyek" alignment="0" min="-2" max="-2" attributes="0"/>
+                                      <Component id="btnTimeline" alignment="1" min="-2" pref="148" max="-2" attributes="0"/>
+                                      <Component id="btnReport" alignment="1" min="-2" pref="148" max="-2" attributes="0"/>
+                                  </Group>
+                                  <EmptySpace max="32767" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="btnMaintenance" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="btnBast" alignment="0" max="32767" attributes="0"/>
+                                      <Component id="btnTeknisi" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                              <Group type="102" alignment="1" attributes="0">
+                                  <EmptySpace pref="111" max="-2" attributes="0"/>
+                                  <Component id="jdashboard" min="-2" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="jhome" min="-2" pref="97" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
                       </Group>
                   </Group>
                   <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
@@ -93,21 +95,21 @@
                   </Group>
                   <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jmaintance" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
-                      <Component id="jdaftar_proyek" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnMaintenance" alignment="3" min="-2" pref="52" max="-2" attributes="0"/>
+                      <Component id="btnDaftarProyek" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jbast" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="jtimeline" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnBast" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnTimeline" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
-                      <Component id="jreport" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
-                      <Component id="jdaftar_teknisi" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnReport" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnTeknisi" alignment="3" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Component id="jhalaman_report" min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="btnHalamanReport" min="-2" pref="50" max="-2" attributes="0"/>
                   <EmptySpace pref="23" max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -147,7 +149,7 @@
             <Property name="iconTextGap" type="int" value="5"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jmaintance">
+        <Component class="javax.swing.JButton" name="btnMaintenance">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -165,8 +167,11 @@
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMaintenanceActionPerformed"/>
+          </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jdaftar_proyek">
+        <Component class="javax.swing.JButton" name="btnDaftarProyek">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -185,10 +190,10 @@
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jdaftar_proyekActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnDaftarProyekActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jtimeline">
+        <Component class="javax.swing.JButton" name="btnTimeline">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -208,10 +213,10 @@
             <Property name="verifyInputWhenFocusTarget" type="boolean" value="false"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jtimelineActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTimelineActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jbast">
+        <Component class="javax.swing.JButton" name="btnBast">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -230,7 +235,7 @@
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jdaftar_teknisi">
+        <Component class="javax.swing.JButton" name="btnTeknisi">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -249,10 +254,10 @@
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jdaftar_teknisiActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTeknisiActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="jreport">
+        <Component class="javax.swing.JButton" name="btnReport">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -271,7 +276,7 @@
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jhalaman_report">
+        <Component class="javax.swing.JButton" name="btnHalamanReport">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -290,7 +295,7 @@
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jhalaman_reportActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnHalamanReportActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
