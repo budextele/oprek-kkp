@@ -463,6 +463,7 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
                         stat.executeUpdate(sql);
                         JOptionPane.showMessageDialog(null, "Data berhasil diubah");
                         loadTable();
+                        con.close();
                 } catch (SQLException e) {
                         JOptionPane.showMessageDialog(null, "Data gagal diubah");
                 }
