@@ -250,6 +250,8 @@ public class dashboard_ui extends javax.swing.JFrame {
 
     private void btnTeknisiActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnTeknisiActionPerformed
         // TODO add your handling code here:
+        daftar_teknisi_ui teknisi = new daftar_teknisi_ui();
+        teknisi.setVisible(true);
     }// GEN-LAST:event_btnTeknisiActionPerformed
 
     private void btnHalamanReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnHalamanReportActionPerformed
