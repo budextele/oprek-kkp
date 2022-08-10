@@ -67,6 +67,11 @@ public class dashboard_ui extends javax.swing.JFrame {
         jhome.setText("Home");
         jhome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jhome.setIconTextGap(5);
+        jhome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jhomeActionPerformed(evt);
+            }
+        });
 
         btnMaintenance.setBackground(new java.awt.Color(0, 204, 204));
         btnMaintenance.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -229,6 +234,13 @@ public class dashboard_ui extends javax.swing.JFrame {
         rp.setVisible(true);
     }//GEN-LAST:event_btnReportActionPerformed
 
+    private void jhomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jhomeActionPerformed
+        // TODO add your handling code here:
+        this.dispose();
+        loginPage lp = new loginPage();
+        lp.setVisible(true);
+    }//GEN-LAST:event_jhomeActionPerformed
+
     private void btnMaintenanceActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnMaintenanceActionPerformed
         // TODO add your handling code here:
         maintenance_ui m = new maintenance_ui();
@@ -256,6 +268,8 @@ public class dashboard_ui extends javax.swing.JFrame {
 
     private void btnHalamanReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnHalamanReportActionPerformed
         // TODO add your handling code here:
+        halaman_report_ui hr = new halaman_report_ui();
+        hr.setVisible(true);
     }// GEN-LAST:event_btnHalamanReportActionPerformed
 
     /**
