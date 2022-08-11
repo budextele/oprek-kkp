@@ -7,17 +7,24 @@ package page;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 
+import javax.swing.JOptionPane;
+
+import modul.userSession;
+
 /**
  *
  * @author BYTECOM
  */
 public class dashboard_ui extends javax.swing.JFrame {
 
+    String ulv = userSession.getUserLevel();
+
     /**
      * Creates new form dashboard_ui1
      */
     public dashboard_ui() {
         initComponents();
+        loadData();
         Dimension layar = Toolkit.getDefaultToolkit().getScreenSize();
 
         // membuat titik x dan y
@@ -35,10 +42,14 @@ public class dashboard_ui extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
+    // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
+        jlabel1 = new javax.swing.JPanel();
         jdashboard = new javax.swing.JLabel();
         jhome = new javax.swing.JButton();
         btnMaintenance = new javax.swing.JButton();
@@ -48,12 +59,14 @@ public class dashboard_ui extends javax.swing.JFrame {
         btnTeknisi = new javax.swing.JButton();
         btnReport = new javax.swing.JButton();
         btnHalamanReport = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        textUserLevel = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 153, 153));
         setForeground(new java.awt.Color(102, 102, 102));
 
-        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jlabel1.setBackground(new java.awt.Color(51, 51, 51));
 
         jdashboard.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jdashboard.setForeground(new java.awt.Color(255, 255, 255));
@@ -160,86 +173,188 @@ public class dashboard_ui extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGap(124, 124, 124)
-                        .addComponent(btnHalamanReport)
-                        .addGap(83, 83, 83))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnDaftarProyek)
-                                    .addComponent(btnTimeline, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(btnReport, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(btnMaintenance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnBast, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(btnTeknisi)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jdashboard)
+        javax.swing.GroupLayout jlabel1Layout = new javax.swing.GroupLayout(jlabel1);
+        jlabel1.setLayout(jlabel1Layout);
+        jlabel1Layout.setHorizontalGroup(
+                jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jlabel1Layout.createSequentialGroup()
+                                .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+                                                jlabel1Layout.createSequentialGroup()
+                                                        .addGap(124, 124, 124)
+                                                        .addComponent(btnHalamanReport)
+                                                        .addGap(83, 83, 83))
+                                        .addGroup(jlabel1Layout
+                                                .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
+                                                        jlabel1Layout.createSequentialGroup()
+                                                                .addGap(141, 141, 141)
+                                                                .addComponent(jdashboard)
+                                                                .addGap(18, 18, 18)
+                                                                .addComponent(jhome,
+                                                                        javax.swing.GroupLayout.PREFERRED_SIZE, 97,
+                                                                        javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jlabel1Layout
+                                                        .createSequentialGroup()
+                                                        .addGap(30, 30, 30)
+                                                        .addGroup(jlabel1Layout
+                                                                .createParallelGroup(
+                                                                        javax.swing.GroupLayout.Alignment.LEADING)
+                                                                .addGroup(jlabel1Layout.createSequentialGroup()
+                                                                        .addGroup(jlabel1Layout.createParallelGroup(
+                                                                                javax.swing.GroupLayout.Alignment.LEADING)
+                                                                                .addComponent(btnDaftarProyek)
+                                                                                .addComponent(btnTimeline,
+                                                                                        javax.swing.GroupLayout.Alignment.TRAILING,
+                                                                                        javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                                        148,
+                                                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                                .addComponent(btnReport,
+                                                                                        javax.swing.GroupLayout.Alignment.TRAILING,
+                                                                                        javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                                        148,
+                                                                                        javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                                        .addPreferredGap(
+                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                                Short.MAX_VALUE)
+                                                                        .addGroup(jlabel1Layout.createParallelGroup(
+                                                                                javax.swing.GroupLayout.Alignment.LEADING,
+                                                                                false)
+                                                                                .addComponent(btnMaintenance,
+                                                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                                        Short.MAX_VALUE)
+                                                                                .addComponent(btnBast,
+                                                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                                                        Short.MAX_VALUE)
+                                                                                .addComponent(btnTeknisi)))
+                                                                .addGroup(jlabel1Layout.createSequentialGroup()
+                                                                        .addGap(4, 4, 4)
+                                                                        .addComponent(textUserLevel,
+                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                                165,
+                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addPreferredGap(
+                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                                        .addComponent(jLabel1,
+                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                                                155,
+                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                                        .addGap(0, 0, Short.MAX_VALUE))))))
+                                .addGap(33, 33, 33)));
+        jlabel1Layout.setVerticalGroup(
+                jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jlabel1Layout.createSequentialGroup()
+                                .addGap(22, 22, 22)
+                                .addGroup(jlabel1Layout
+                                        .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                        .addComponent(jdashboard, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jhome, javax.swing.GroupLayout.PREFERRED_SIZE, 32,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(26, 26, 26)
+                                .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(btnMaintenance, javax.swing.GroupLayout.PREFERRED_SIZE, 52,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnDaftarProyek, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
-                                .addComponent(jhome, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addGap(33, 33, 33))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jdashboard, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jhome, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnMaintenance, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDaftarProyek, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBast, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTimeline, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTeknisi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(btnHalamanReport, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
+                                .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btnBast, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnTimeline, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(btnTeknisi, javax.swing.GroupLayout.PREFERRED_SIZE, 50,
+                                                javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(jlabel1Layout.createSequentialGroup()
+                                                .addGap(18, 18, 18)
+                                                .addComponent(btnHalamanReport, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43,
+                                                        Short.MAX_VALUE)
+                                                .addComponent(jLabel1)
+                                                .addGap(20, 20, 20))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jlabel1Layout
+                                                .createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(textUserLevel, javax.swing.GroupLayout.PREFERRED_SIZE,
+                                                        javax.swing.GroupLayout.DEFAULT_SIZE,
+                                                        javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addContainerGap()))));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jlabel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
         layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(jlabel1, javax.swing.GroupLayout.DEFAULT_SIZE,
+                                        javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addContainerGap()));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
+    // private void btnHalamanReportActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnHalamanReportActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnHalamanReportActionPerformed
+
+    // private void btnReportActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnReportActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnReportActionPerformed
+
+    // private void btnTeknisiActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnTeknisiActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnTeknisiActionPerformed
+
+    // private void btnTimelineActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnTimelineActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnTimelineActionPerformed
+
+    // private void btnDaftarProyekActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnDaftarProyekActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnDaftarProyekActionPerformed
+
+    // private void btnMaintenanceActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_btnMaintenanceActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_btnMaintenanceActionPerformed
+
+    // private void jhomeActionPerformed(java.awt.event.ActionEvent evt)
+    // {//GEN-FIRST:event_jhomeActionPerformed
+    // // TODO add your handling code here:
+    // }//GEN-LAST:event_jhomeActionPerformed
+
+    private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnReportActionPerformed
         // TODO add your handling code here:
         report_proyek_ui rp = new report_proyek_ui();
         rp.setVisible(true);
-    }//GEN-LAST:event_btnReportActionPerformed
+    }// GEN-LAST:event_btnReportActionPerformed
 
-    private void jhomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jhomeActionPerformed
+    private void jhomeActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jhomeActionPerformed
         // TODO add your handling code here:
         this.dispose();
         loginPage lp = new loginPage();
         lp.setVisible(true);
-    }//GEN-LAST:event_jhomeActionPerformed
+        // loginPage.level = null;
+    }// GEN-LAST:event_jhomeActionPerformed
 
     private void btnMaintenanceActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnMaintenanceActionPerformed
         // TODO add your handling code here:
@@ -271,6 +386,25 @@ public class dashboard_ui extends javax.swing.JFrame {
         halaman_report_ui hr = new halaman_report_ui();
         hr.setVisible(true);
     }// GEN-LAST:event_btnHalamanReportActionPerformed
+
+    public void loadData() {
+        // String ulv = userSession.getUserLevel();
+        System.out.println(ulv);
+        // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
+        textUserLevel.setText("Anda login sebagai " + ulv);
+        textUserLevel.setEditable(false);
+
+        if (ulv.equals("admin")) {
+            btnBast.setEnabled(true);
+            btnHalamanReport.setEnabled(true);
+        } else if (ulv.equals("teknisi")) {
+            btnBast.setEnabled(false);
+            btnHalamanReport.setEnabled(false);
+        } else if (ulv.equals("ceo")) {
+            btnBast.setEnabled(true);
+            btnHalamanReport.setEnabled(true);
+        }
+    }
 
     /**
      * @param args the command line arguments
@@ -338,8 +472,10 @@ public class dashboard_ui extends javax.swing.JFrame {
     private javax.swing.JButton btnReport;
     private javax.swing.JButton btnTeknisi;
     private javax.swing.JButton btnTimeline;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jdashboard;
     private javax.swing.JButton jhome;
+    private javax.swing.JPanel jlabel1;
+    private javax.swing.JTextField textUserLevel;
     // End of variables declaration//GEN-END:variables
 }
