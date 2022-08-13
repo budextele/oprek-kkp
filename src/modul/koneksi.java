@@ -25,8 +25,8 @@ public class koneksi {
             // username - admin
             // password - admin
             String urlDB = "jdbc:mysql://localhost:3306/project_manager?useSSL=false";
-            String userDB = "root";
-            String passDB = "";
+            String userDB = "admin";
+            String passDB = "admin";
             mySQLConnection = DriverManager.getConnection(urlDB, userDB, passDB);
         } catch (Exception e) {
             System.out.print(e.getMessage());
