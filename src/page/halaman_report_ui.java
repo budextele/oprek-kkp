@@ -424,7 +424,7 @@ public class halaman_report_ui extends javax.swing.JFrame {
         // TODO add your handling code here:
         // daftar proyek
         String date = java.time.LocalDate.now().toString();
-        String fileName = "A:\\" + date + " - Daftar Proyek.pdf";
+        String fileName = "D:\\" + date + " - Daftar Proyek.pdf";
 
         // create document object
         try {
