@@ -53,6 +53,7 @@ public class halaman_report_ui extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated
     // <editor-fold defaultstate="collapsed" desc="Generated
+    // <editor-fold defaultstate="collapsed" desc="Generated
     // Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -74,8 +75,6 @@ public class halaman_report_ui extends javax.swing.JFrame {
         jlokasi2 = new javax.swing.JLabel();
         comboTimeline = new javax.swing.JComboBox<>();
         comboReport = new javax.swing.JComboBox<>();
-        comboMaintenance = new javax.swing.JComboBox<>();
-        comboBast = new javax.swing.JComboBox<>();
         btnUnduh1 = new javax.swing.JButton();
         btnUnduh2 = new javax.swing.JButton();
         btnUnduh3 = new javax.swing.JButton();
@@ -189,22 +188,6 @@ public class halaman_report_ui extends javax.swing.JFrame {
             }
         });
 
-        comboMaintenance.setModel(
-                new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboMaintenance.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboMaintenanceActionPerformed(evt);
-            }
-        });
-
-        comboBast.setModel(
-                new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        comboBast.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                comboBastActionPerformed(evt);
-            }
-        });
-
         btnUnduh1.setBackground(new java.awt.Color(0, 204, 204));
         btnUnduh1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnUnduh1.setForeground(new java.awt.Color(255, 255, 255));
@@ -280,10 +263,7 @@ public class halaman_report_ui extends javax.swing.JFrame {
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addComponent(jlokasi1)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                .addComponent(comboMaintenance, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                        127, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGap(18, 18, 18)
+                                                .addGap(163, 163, 163)
                                                 .addComponent(btnUnduh4))
                                         .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGroup(jPanel1Layout
@@ -296,14 +276,8 @@ public class halaman_report_ui extends javax.swing.JFrame {
                                                                 .addComponent(comboTimeline,
                                                                         javax.swing.GroupLayout.PREFERRED_SIZE, 127,
                                                                         javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                        .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addComponent(jlokasi2)
-                                                                .addPreferredGap(
-                                                                        javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                                .addComponent(comboBast,
-                                                                        javax.swing.GroupLayout.PREFERRED_SIZE, 127,
-                                                                        javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                .addGap(18, 18, 18)
+                                                        .addComponent(jlokasi2))
+                                                .addGap(20, 20, 20)
                                                 .addGroup(jPanel1Layout
                                                         .createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                         .addComponent(btnUnduh1)
@@ -357,17 +331,11 @@ public class halaman_report_ui extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jlokasi1)
-                                        .addComponent(comboMaintenance, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnUnduh4, javax.swing.GroupLayout.PREFERRED_SIZE, 26,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                                         .addComponent(jlokasi2)
-                                        .addComponent(comboBast, javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(btnUnduh5, javax.swing.GroupLayout.PREFERRED_SIZE, 26,
                                                 javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26,
@@ -575,10 +543,100 @@ public class halaman_report_ui extends javax.swing.JFrame {
 
     private void btnUnduh4ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnUnduh4ActionPerformed
         // TODO add your handling code here:
+        // maintance
+        String date = java.time.LocalDate.now().toString();
+        String fileName = "D:\\" + date + " - Maintenance.pdf";
+        // create document object
+        try {
+            Document document = new Document() {
+            };
+            PdfWriter.getInstance((com.itextpdf.text.Document) document, new FileOutputStream(fileName));
+            document.open();
+            Paragraph p = new Paragraph("Maintenance");
+            p.setAlignment(Element.ALIGN_CENTER);
+            document.add(p);
+            // ad null paragraf
+            document.add(new Paragraph("\n"));
+            // pull data from db
+            String sql = "SELECT * FROM maintenance";
+            try {
+                java.sql.Connection conn = (Connection) koneksi.getKoneksi();
+                java.sql.Statement stm = conn.createStatement();
+                java.sql.ResultSet res = stm.executeQuery(sql);
+                // create table
+                PdfPTable table = new PdfPTable(res.getMetaData().getColumnCount());
+                for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                    System.out.println(res.getMetaData().getColumnName(i));
+                    table.addCell(res.getMetaData().getColumnName(i));
+                }
+
+                while (res.next()) {
+                    for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                        table.addCell(res.getString(i));
+                    }
+                }
+                document.add(table);
+                conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            document.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        JOptionPane.showMessageDialog(null, "File berhasil diunduh");
     }// GEN-LAST:event_btnUnduh4ActionPerformed
 
     private void btnUnduh5ActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnUnduh5ActionPerformed
         // TODO add your handling code here:
+        // report
+        String date = java.time.LocalDate.now().toString();
+        String fileName = "D:\\" + date + " - BAST.pdf";
+        // create document object
+        try {
+            Document document = new Document() {
+            };
+            PdfWriter.getInstance((com.itextpdf.text.Document) document, new FileOutputStream(fileName));
+            document.open();
+            Paragraph p = new Paragraph("BAST");
+            p.setAlignment(Element.ALIGN_CENTER);
+            document.add(p);
+            // ad null paragraf
+            document.add(new Paragraph("\n"));
+            // pull data from db
+            String sql = "SELECT * FROM bast";
+            try {
+                java.sql.Connection conn = (Connection) koneksi.getKoneksi();
+                java.sql.Statement stm = conn.createStatement();
+                java.sql.ResultSet res = stm.executeQuery(sql);
+                // create table
+                PdfPTable table = new PdfPTable(res.getMetaData().getColumnCount());
+                for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                    System.out.println(res.getMetaData().getColumnName(i));
+                    table.addCell(res.getMetaData().getColumnName(i));
+                }
+
+                while (res.next()) {
+                    for (int i = 1; i <= res.getMetaData().getColumnCount(); i++) {
+                        if (i == 4) {
+                            byte[] img = res.getBytes(i);
+                            com.itextpdf.text.Image image = com.itextpdf.text.Image.getInstance(img);
+                            table.addCell(image);
+                        } else {
+                            table.addCell(res.getString(i));
+                        }
+                    }
+                }
+                document.add(table);
+                conn.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            document.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        JOptionPane.showMessageDialog(null, "File berhasil diunduh");
     }// GEN-LAST:event_btnUnduh5ActionPerformed
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnRefreshActionPerformed
@@ -647,8 +705,6 @@ public class halaman_report_ui extends javax.swing.JFrame {
         // comboDaftarProyek.setModel(model1);
         comboTimeline.setModel(model2);
         comboReport.setModel(model3);
-        comboMaintenance.setModel(model4);
-        comboBast.setModel(model5);
 
     }
 
@@ -718,8 +774,6 @@ public class halaman_report_ui extends javax.swing.JFrame {
     private javax.swing.JButton btnUnduh3;
     private javax.swing.JButton btnUnduh4;
     private javax.swing.JButton btnUnduh5;
-    private javax.swing.JComboBox<String> comboBast;
-    private javax.swing.JComboBox<String> comboMaintenance;
     private javax.swing.JComboBox<String> comboReport;
     private javax.swing.JComboBox<String> comboTimeline;
     private javax.swing.JLabel jLabel1;
