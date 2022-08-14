@@ -16,12 +16,15 @@ import javax.swing.JTextField;
 import javax.swing.table.DefaultTableModel;
 
 import modul.koneksi;
+import modul.userSession;
 
 /**
  *
  * @author BYTECOM
  */
 public class daftar_proyek_ui extends javax.swing.JFrame {
+
+        String ulv = userSession.getUserLevel();
 
         /**
          * Creates new form daftar_proyek_ui
@@ -616,6 +619,28 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
                         con.close();
                 } catch (SQLException e) {
                         System.out.println("Error : " + e.getMessage());
+                }
+
+                // user level
+
+                // String ulv = userSession.getUserLevel();
+                System.out.println(ulv);
+                // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
+                
+
+                if (ulv.equals("admin")) {
+                        btnSave.setEnabled(true);
+                        btnDell.setEnabled(true);
+                        btnEdit.setEnabled(true);
+
+                } else if (ulv.equals("teknisi")) {
+                        btnSave.setEnabled(false);
+                        btnDell.setEnabled(false);
+                        btnEdit.setEnabled(false);
+                } else if (ulv.equals("ceo")) {
+                        btnSave.setEnabled(true);
+                        btnDell.setEnabled(true);
+                        btnEdit.setEnabled(true);
                 }
         }
 
