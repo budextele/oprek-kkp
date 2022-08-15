@@ -22,12 +22,15 @@ import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modul.koneksi;
+import modul.userSession;
 
 /**
  *
  * @author BYTECOM
  */
 public class report_proyek_ui extends javax.swing.JFrame {
+
+    String ulv = userSession.getUserLevel();
 
         /**
          * Creates new form daftar_proyek_ui
@@ -810,6 +813,29 @@ public class report_proyek_ui extends javax.swing.JFrame {
                         con.close();
                 } catch (Exception e) {
                         System.out.println("Error : " + e.getMessage());
+                }
+                
+                // String ulv = userSession.getUserLevel();
+                System.out.println(ulv);
+                // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
+                switch (ulv) {
+                    case "admin":
+                        btnSave.setEnabled(true);
+                        btnDell.setEnabled(true);
+                        btnEdit.setEnabled(true);
+                        break;
+                    case "teknisi":
+                        btnSave.setEnabled(false);
+                        btnDell.setEnabled(false);
+                        btnEdit.setEnabled(false);
+                        break;
+                    case "ceo":
+                        btnSave.setEnabled(true);
+                        btnDell.setEnabled(true);
+                        btnEdit.setEnabled(true);
+                        break;
+                    default:
+                        break;
                 }
         }
 

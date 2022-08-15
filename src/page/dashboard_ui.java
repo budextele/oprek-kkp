@@ -8,7 +8,6 @@ import java.awt.Dimension;
 import java.awt.Toolkit;
 
 import javax.swing.JOptionPane;
-
 import modul.userSession;
 
 /**
@@ -18,6 +17,17 @@ import modul.userSession;
 public class dashboard_ui extends javax.swing.JFrame {
 
     String ulv = userSession.getUserLevel();
+    
+    /** initiate JFrame **/
+    daftar_proyek_ui dp = new daftar_proyek_ui();
+    loginPage lp = new loginPage();
+    halaman_report_ui hr = new halaman_report_ui();
+    daftar_teknisi_ui teknisi = new daftar_teknisi_ui();
+    timeline_ui t = new timeline_ui();
+    maintenance_ui m = new maintenance_ui();
+    report_proyek_ui rp = new report_proyek_ui();
+    bast_ui bast = new bast_ui();
+    
 
     /**
      * Creates new form dashboard_ui1
@@ -77,7 +87,7 @@ public class dashboard_ui extends javax.swing.JFrame {
         jhome.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jhome.setForeground(new java.awt.Color(255, 255, 255));
         jhome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/home.png"))); // NOI18N
-        jhome.setText("Home");
+        jhome.setText("Logout");
         jhome.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jhome.setIconTextGap(5);
         jhome.addActionListener(new java.awt.event.ActionListener() {
@@ -301,52 +311,51 @@ public class dashboard_ui extends javax.swing.JFrame {
 
     private void btnBastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBastActionPerformed
         // TODO add your handling code here:
-        bast_ui bast = new bast_ui();
         bast.setVisible(true);
     }//GEN-LAST:event_btnBastActionPerformed
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnReportActionPerformed
         // TODO add your handling code here:
-        report_proyek_ui rp = new report_proyek_ui();
         rp.setVisible(true);
     }// GEN-LAST:event_btnReportActionPerformed
 
     private void jhomeActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_jhomeActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        loginPage lp = new loginPage();
+        dp.dispose();
+        hr.dispose();
+        teknisi.dispose();
+        t.dispose();
+        m.dispose();
+        rp.dispose();
+        bast.dispose();
         lp.setVisible(true);
         // loginPage.level = null;
     }// GEN-LAST:event_jhomeActionPerformed
 
     private void btnMaintenanceActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnMaintenanceActionPerformed
         // TODO add your handling code here:
-        maintenance_ui m = new maintenance_ui();
         m.setVisible(true);
     }// GEN-LAST:event_btnMaintenanceActionPerformed
 
     private void btnDaftarProyekActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnDaftarProyekActionPerformed
         // TODO add your handling code here:
-        daftar_proyek_ui dp = new daftar_proyek_ui();
         dp.setVisible(true);
 
     }// GEN-LAST:event_btnDaftarProyekActionPerformed
 
     private void btnTimelineActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnTimelineActionPerformed
         // TODO add your handling code here:
-        timeline_ui t = new timeline_ui();
         t.setVisible(true);
     }// GEN-LAST:event_btnTimelineActionPerformed
 
     private void btnTeknisiActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnTeknisiActionPerformed
         // TODO add your handling code here:
-        daftar_teknisi_ui teknisi = new daftar_teknisi_ui();
         teknisi.setVisible(true);
     }// GEN-LAST:event_btnTeknisiActionPerformed
 
     private void btnHalamanReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnHalamanReportActionPerformed
         // TODO add your handling code here:
-        halaman_report_ui hr = new halaman_report_ui();
         hr.setVisible(true);
     }// GEN-LAST:event_btnHalamanReportActionPerformed
 

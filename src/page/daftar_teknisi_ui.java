@@ -14,6 +14,7 @@ import java.net.IDN;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import modul.koneksi;
+import modul.userSession;
 
 /**
  *
@@ -21,9 +22,11 @@ import modul.koneksi;
  */
 public class daftar_teknisi_ui extends javax.swing.JFrame {
 
+    String ulv = userSession.getUserLevel();
     /**
      * Creates new form daftar_proyek_ui
      */
+    
     public daftar_teknisi_ui() {
         initComponents();
         loadData();
@@ -526,6 +529,29 @@ public class daftar_teknisi_ui extends javax.swing.JFrame {
             }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
+        }
+        
+        // String ulv = userSession.getUserLevel();
+        System.out.println(ulv);
+        // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
+        switch (ulv) {
+            case "admin":
+                btnSave.setEnabled(true);
+                btnDell.setEnabled(true);
+                btnEdit.setEnabled(true);
+                break;
+            case "teknisi":
+                btnSave.setEnabled(false);
+                btnDell.setEnabled(false);
+                btnEdit.setEnabled(false);
+                break;
+            case "ceo":
+                btnSave.setEnabled(true);
+                btnDell.setEnabled(true);
+                btnEdit.setEnabled(true);
+                break;
+            default:
+                break;
         }
     }
 
