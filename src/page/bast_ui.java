@@ -78,6 +78,7 @@ public class bast_ui extends javax.swing.JFrame {
         btnLampiran = new javax.swing.JButton();
         textLampiran = new javax.swing.JTextField();
         labelLampiran = new javax.swing.JLabel();
+        formatfile = new javax.swing.JTextField();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -259,6 +260,8 @@ public class bast_ui extends javax.swing.JFrame {
             }
         });
 
+        formatfile.setText("formatfile");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -305,7 +308,8 @@ public class bast_ui extends javax.swing.JFrame {
                                 .addGap(30, 30, 30)
                                 .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(32, 32, 32)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(formatfile, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(labelLampiran, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -344,7 +348,9 @@ public class bast_ui extends javax.swing.JFrame {
                                 .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(labelLampiran, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(formatfile, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -382,10 +388,16 @@ public class bast_ui extends javax.swing.JFrame {
         private void btnLampiranActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnLampiranActionPerformed
                 // TODO add your handling code here:
                 try {
+                        String[] pics = new String[] { "gif", "jpg", "tif", "png", "jpeg", "jfif", "tiff    " };
                         JFileChooser chooser = new JFileChooser();
-                        chooser.showOpenDialog(null);
+                        chooser.addChoosableFileFilter(new SimpleFileFilter(pics, "Image files"));
+                        chooser.setAcceptAllFileFilterUsed(false);
+                        
+                        int option = chooser.showOpenDialog(bast_ui.this);
                         File f = chooser.getSelectedFile();
                         String filename = f.getAbsolutePath();
+                        String fileType = chooser.getTypeDescription(f);
+                
                         textLampiran.setText(filename);
                         ImageIcon imageIcon = new ImageIcon(
                                         new ImageIcon(filename).getImage().getScaledInstance(labelLampiran.getWidth(),
@@ -557,7 +569,7 @@ public class bast_ui extends javax.swing.JFrame {
                 } catch (Exception e) {
                         System.out.println("Error : " + e.getMessage());
                 }
-                
+                               
                 
         System.out.println(ulv);
         // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
@@ -642,6 +654,7 @@ public class bast_ui extends javax.swing.JFrame {
                         java.util.logging.Logger.getLogger(bast_ui.class.getName()).log(java.util.logging.Level.SEVERE,
                                         null, ex);
                 }
+                
                 // </editor-fold>
                 // </editor-fold>
                 // </editor-fold>
@@ -725,6 +738,7 @@ public class bast_ui extends javax.swing.JFrame {
     private javax.swing.JButton btnSave;
     private javax.swing.JComboBox<String> comboNamaProyek;
     private com.toedter.calendar.JDateChooser dateBast;
+    private javax.swing.JTextField formatfile;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
