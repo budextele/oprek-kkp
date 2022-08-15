@@ -566,10 +566,17 @@ public class report_proyek_ui extends javax.swing.JFrame {
         private void btnLampiranActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnLampiranActionPerformed
                 // TODO add your handling code here:
                 try {
+                        String[] pics = new String[] { "gif", "jpg", "tif", "png", "jpeg", "jfif", "tiff    " };
                         JFileChooser chooser = new JFileChooser();
-                        chooser.showOpenDialog(null);
+                        chooser.addChoosableFileFilter(new SimpleFileFilter(pics, "Image files"));
+                        chooser.setAcceptAllFileFilterUsed(false);
+                        
+                        int option = chooser.showOpenDialog(report_proyek_ui.this);
                         File f = chooser.getSelectedFile();
                         String filename = f.getAbsolutePath();
+                        String fileType = chooser.getTypeDescription(f);
+                        
+                        
                         textLampiran.setText(filename);
                         ImageIcon imageIcon = new ImageIcon(
                                         new ImageIcon(filename).getImage().getScaledInstance(labelLampiran.getWidth(),
