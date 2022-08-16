@@ -673,9 +673,9 @@ public class timeline_ui extends javax.swing.JFrame {
                 btnEdit.setEnabled(false);
                 break;
             case "ceo":
-                btnSave.setEnabled(true);
-                btnDell.setEnabled(true);
-                btnEdit.setEnabled(true);
+                btnSave.setEnabled(false);
+                btnDell.setEnabled(false);
+                btnEdit.setEnabled(false);
                 break;
             default:
                 break;

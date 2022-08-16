@@ -628,14 +628,14 @@ public class maintenance_ui extends javax.swing.JFrame {
                         btnEdit.setEnabled(true);
                         break;
                     case "teknisi":
-                        btnSave.setEnabled(false);
-                        btnDell.setEnabled(false);
-                        btnEdit.setEnabled(false);
-                        break;
-                    case "ceo":
                         btnSave.setEnabled(true);
                         btnDell.setEnabled(true);
                         btnEdit.setEnabled(true);
+                        break;
+                    case "ceo":
+                        btnSave.setEnabled(false);
+                        btnDell.setEnabled(false);
+                        btnEdit.setEnabled(false);
                         break;
                     default:
                         break;

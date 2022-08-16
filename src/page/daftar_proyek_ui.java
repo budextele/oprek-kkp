@@ -638,9 +638,9 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
                         btnDell.setEnabled(false);
                         btnEdit.setEnabled(false);
                 } else if (ulv.equals("ceo")) {
-                        btnSave.setEnabled(true);
-                        btnDell.setEnabled(true);
-                        btnEdit.setEnabled(true);
+                        btnSave.setEnabled(false);
+                        btnDell.setEnabled(false);
+                        btnEdit.setEnabled(false);
                 }
         }
 
