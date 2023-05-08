@@ -79,7 +79,7 @@
                                       <EmptySpace max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="btnMaintenance" alignment="0" max="32767" attributes="0"/>
-                                          <Component id="btnBast" alignment="0" max="32767" attributes="0"/>
+                                          <Component id="btnQA" alignment="0" max="32767" attributes="0"/>
                                           <Component id="btnTeknisi" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
@@ -113,7 +113,7 @@
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnBast" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
+                      <Component id="btnQA" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                       <Component id="btnTimeline" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -243,7 +243,7 @@
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTimelineActionPerformed"/>
           </Events>
         </Component>
-        <Component class="javax.swing.JButton" name="btnBast">
+        <Component class="javax.swing.JButton" name="btnQA">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="0" type="rgb"/>
@@ -257,12 +257,12 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/gambar_icon/log-document.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="BAST"/>
+            <Property name="text" type="java.lang.String" value="QA"/>
             <Property name="horizontalAlignment" type="int" value="2"/>
             <Property name="iconTextGap" type="int" value="10"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBastActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnQAActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnTeknisi">

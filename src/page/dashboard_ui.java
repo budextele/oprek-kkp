@@ -26,7 +26,7 @@ public class dashboard_ui extends javax.swing.JFrame {
     timeline_ui t = new timeline_ui();
     maintenance_ui m = new maintenance_ui();
     report_proyek_ui rp = new report_proyek_ui();
-    bast_ui bast = new bast_ui();
+    qa_ui qa = new qa_ui();
     
 
     /**
@@ -65,7 +65,7 @@ public class dashboard_ui extends javax.swing.JFrame {
         btnMaintenance = new javax.swing.JButton();
         btnDaftarProyek = new javax.swing.JButton();
         btnTimeline = new javax.swing.JButton();
-        btnBast = new javax.swing.JButton();
+        btnQA = new javax.swing.JButton();
         btnTeknisi = new javax.swing.JButton();
         btnReport = new javax.swing.JButton();
         btnHalamanReport = new javax.swing.JButton();
@@ -136,16 +136,16 @@ public class dashboard_ui extends javax.swing.JFrame {
             }
         });
 
-        btnBast.setBackground(new java.awt.Color(0, 204, 204));
-        btnBast.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnBast.setForeground(new java.awt.Color(255, 255, 255));
-        btnBast.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/log-document.png"))); // NOI18N
-        btnBast.setText("BAST");
-        btnBast.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnBast.setIconTextGap(10);
-        btnBast.addActionListener(new java.awt.event.ActionListener() {
+        btnQA.setBackground(new java.awt.Color(0, 204, 204));
+        btnQA.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnQA.setForeground(new java.awt.Color(255, 255, 255));
+        btnQA.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/log-document.png"))); // NOI18N
+        btnQA.setText("QA");
+        btnQA.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnQA.setIconTextGap(10);
+        btnQA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnBastActionPerformed(evt);
+                btnQAActionPerformed(evt);
             }
         });
 
@@ -215,7 +215,7 @@ public class dashboard_ui extends javax.swing.JFrame {
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(btnMaintenance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnBast, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(btnQA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(btnTeknisi)))
                                 .addGroup(jlabel1Layout.createSequentialGroup()
                                     .addGap(4, 4, 4)
@@ -238,7 +238,7 @@ public class dashboard_ui extends javax.swing.JFrame {
                     .addComponent(btnDaftarProyek, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnBast, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnQA, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnTimeline, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -309,10 +309,10 @@ public class dashboard_ui extends javax.swing.JFrame {
     // // TODO add your handling code here:
     // }//GEN-LAST:event_jhomeActionPerformed
 
-    private void btnBastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBastActionPerformed
+    private void btnQAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnQAActionPerformed
         // TODO add your handling code here:
-        bast.setVisible(true);
-    }//GEN-LAST:event_btnBastActionPerformed
+        qa.setVisible(true);
+    }//GEN-LAST:event_btnQAActionPerformed
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnReportActionPerformed
         // TODO add your handling code here:
@@ -328,7 +328,7 @@ public class dashboard_ui extends javax.swing.JFrame {
         t.dispose();
         m.dispose();
         rp.dispose();
-        bast.dispose();
+        qa.dispose();
         lp.setVisible(true);
         // loginPage.level = null;
     }// GEN-LAST:event_jhomeActionPerformed
@@ -367,13 +367,13 @@ public class dashboard_ui extends javax.swing.JFrame {
         textUserLevel.setEditable(false);
 
         if (ulv.equals("admin")) {
-            btnBast.setEnabled(true);
+            btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(true);
         } else if (ulv.equals("teknisi")) {
-            btnBast.setEnabled(false);
+            btnQA.setEnabled(false);
             btnHalamanReport.setEnabled(false);
         } else if (ulv.equals("ceo")) {
-            btnBast.setEnabled(true);
+            btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(true);
         }
     }
@@ -437,10 +437,10 @@ public class dashboard_ui extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnBast;
     private javax.swing.JButton btnDaftarProyek;
     private javax.swing.JButton btnHalamanReport;
     private javax.swing.JButton btnMaintenance;
+    private javax.swing.JButton btnQA;
     private javax.swing.JButton btnReport;
     private javax.swing.JButton btnTeknisi;
     private javax.swing.JButton btnTimeline;
