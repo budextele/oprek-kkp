@@ -207,7 +207,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="jstart_date" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                      <Component id="dateBast" min="-2" pref="127" max="-2" attributes="0"/>
+                                      <Component id="dateQA" min="-2" pref="127" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" attributes="0">
                                       <Component id="jpekerjaan2" min="-2" max="-2" attributes="0"/>
@@ -242,9 +242,7 @@
                           </Group>
                       </Group>
                   </Group>
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="labelLampiran" min="-2" pref="216" max="-2" attributes="0"/>
-                  <EmptySpace pref="19" max="32767" attributes="0"/>
+                  <EmptySpace pref="247" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -258,38 +256,33 @@
                   </Group>
                   <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Group type="103" groupAlignment="3" attributes="0">
-                                  <Component id="textNo" alignment="3" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jid1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="jstart_date" alignment="1" min="-2" max="-2" attributes="0"/>
-                                  <Component id="dateBast" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jnama_proyek" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="comboNamaProyek" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jpekerjaan1" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="textItem_Tes" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="textPICQA" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jid" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="jpekerjaan2" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="textStatus" alignment="3" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="textketerangan" min="-2" pref="71" max="-2" attributes="0"/>
-                              <Component id="jid2" min="-2" max="-2" attributes="0"/>
-                          </Group>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="textNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jid1" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <Component id="labelLampiran" min="-2" pref="147" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jstart_date" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="dateQA" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="jnama_proyek" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="comboNamaProyek" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jpekerjaan1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textItem_Tes" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="textPICQA" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jid" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jpekerjaan2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="textStatus" alignment="3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="textketerangan" min="-2" pref="71" max="-2" attributes="0"/>
+                      <Component id="jid2" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -462,7 +455,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="com.toedter.calendar.JDateChooser" name="dateBast">
+        <Component class="com.toedter.calendar.JDateChooser" name="dateQA">
         </Component>
         <Component class="javax.swing.JLabel" name="jpekerjaan1">
           <Properties>
@@ -476,8 +469,6 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="textItem_Tes">
-        </Component>
-        <Component class="javax.swing.JLabel" name="labelLampiran">
         </Component>
         <Component class="javax.swing.JTextField" name="textPICQA">
         </Component>

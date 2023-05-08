@@ -6,7 +6,6 @@ package page;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
-
 import javax.swing.JOptionPane;
 import modul.userSession;
 
@@ -22,7 +21,7 @@ public class dashboard_ui extends javax.swing.JFrame {
     daftar_proyek_ui dp = new daftar_proyek_ui();
     loginPage lp = new loginPage();
     halaman_report_ui hr = new halaman_report_ui();
-    daftar_teknisi_ui teknisi = new daftar_teknisi_ui();
+    daftar_PIC_SRE_ui PicSre = new daftar_PIC_SRE_ui();
     timeline_ui t = new timeline_ui();
     maintenance_ui m = new maintenance_ui();
     report_proyek_ui rp = new report_proyek_ui();
@@ -66,7 +65,7 @@ public class dashboard_ui extends javax.swing.JFrame {
         btnDaftarProyek = new javax.swing.JButton();
         btnTimeline = new javax.swing.JButton();
         btnQA = new javax.swing.JButton();
-        btnTeknisi = new javax.swing.JButton();
+        btnPicSre = new javax.swing.JButton();
         btnReport = new javax.swing.JButton();
         btnHalamanReport = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -149,16 +148,16 @@ public class dashboard_ui extends javax.swing.JFrame {
             }
         });
 
-        btnTeknisi.setBackground(new java.awt.Color(0, 204, 204));
-        btnTeknisi.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnTeknisi.setForeground(new java.awt.Color(255, 255, 255));
-        btnTeknisi.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/architect.png"))); // NOI18N
-        btnTeknisi.setText("Daftar Teknisi");
-        btnTeknisi.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnTeknisi.setIconTextGap(10);
-        btnTeknisi.addActionListener(new java.awt.event.ActionListener() {
+        btnPicSre.setBackground(new java.awt.Color(0, 204, 204));
+        btnPicSre.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnPicSre.setForeground(new java.awt.Color(255, 255, 255));
+        btnPicSre.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/architect.png"))); // NOI18N
+        btnPicSre.setText("PIC SRE");
+        btnPicSre.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnPicSre.setIconTextGap(10);
+        btnPicSre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTeknisiActionPerformed(evt);
+                btnPicSreActionPerformed(evt);
             }
         });
 
@@ -216,7 +215,7 @@ public class dashboard_ui extends javax.swing.JFrame {
                                     .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                         .addComponent(btnMaintenance, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(btnQA, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnTeknisi)))
+                                        .addComponent(btnPicSre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                                 .addGroup(jlabel1Layout.createSequentialGroup()
                                     .addGap(4, 4, 4)
                                     .addComponent(textUserLevel, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -243,7 +242,7 @@ public class dashboard_ui extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnReport, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnTeknisi, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnPicSre, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jlabel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jlabel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
@@ -284,7 +283,7 @@ public class dashboard_ui extends javax.swing.JFrame {
     // // TODO add your handling code here:
     // }//GEN-LAST:event_btnReportActionPerformed
 
-    // private void btnTeknisiActionPerformed(java.awt.event.ActionEvent evt)
+    // private void btnPicSreActionPerformed(java.awt.event.ActionEvent evt)
     // {//GEN-FIRST:event_btnTeknisiActionPerformed
     // // TODO add your handling code here:
     // }//GEN-LAST:event_btnTeknisiActionPerformed
@@ -324,7 +323,7 @@ public class dashboard_ui extends javax.swing.JFrame {
         this.dispose();
         dp.dispose();
         hr.dispose();
-        teknisi.dispose();
+        PicSre.dispose();
         t.dispose();
         m.dispose();
         rp.dispose();
@@ -349,10 +348,10 @@ public class dashboard_ui extends javax.swing.JFrame {
         t.setVisible(true);
     }// GEN-LAST:event_btnTimelineActionPerformed
 
-    private void btnTeknisiActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnTeknisiActionPerformed
+    private void btnPicSreActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnPicSreActionPerformed
         // TODO add your handling code here:
-        teknisi.setVisible(true);
-    }// GEN-LAST:event_btnTeknisiActionPerformed
+        PicSre.setVisible(true);
+    }// GEN-LAST:event_btnPicSreActionPerformed
 
     private void btnHalamanReportActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnHalamanReportActionPerformed
         // TODO add your handling code here:
@@ -440,9 +439,9 @@ public class dashboard_ui extends javax.swing.JFrame {
     private javax.swing.JButton btnDaftarProyek;
     private javax.swing.JButton btnHalamanReport;
     private javax.swing.JButton btnMaintenance;
+    private javax.swing.JButton btnPicSre;
     private javax.swing.JButton btnQA;
     private javax.swing.JButton btnReport;
-    private javax.swing.JButton btnTeknisi;
     private javax.swing.JButton btnTimeline;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jdashboard;
