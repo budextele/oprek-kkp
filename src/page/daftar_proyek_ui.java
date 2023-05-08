@@ -48,408 +48,333 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
         // <editor-fold defaultstate="collapsed" desc="Generated
         // <editor-fold defaultstate="collapsed" desc="Generated
         // <editor-fold defaultstate="collapsed" desc="Generated
-        // Code">//GEN-BEGIN:initComponents
-        private void initComponents() {
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
 
-                jScrollPane1 = new javax.swing.JScrollPane();
-                jTable1 = new javax.swing.JTable();
-                jScrollPane2 = new javax.swing.JScrollPane();
-                jTable2 = new javax.swing.JTable();
-                jScrollPane3 = new javax.swing.JScrollPane();
-                jTable3 = new javax.swing.JTable();
-                jScrollPane4 = new javax.swing.JScrollPane();
-                jTable4 = new javax.swing.JTable();
-                jPanel1 = new javax.swing.JPanel();
-                btnEdit = new javax.swing.JButton();
-                jLabel1 = new javax.swing.JLabel();
-                btnDell = new javax.swing.JButton();
-                jid = new javax.swing.JLabel();
-                btnClear = new javax.swing.JButton();
-                jnama_proyek = new javax.swing.JLabel();
-                btnExit = new javax.swing.JButton();
-                jlokasi = new javax.swing.JLabel();
-                jpic = new javax.swing.JLabel();
-                jstatus = new javax.swing.JLabel();
-                comboStatus = new javax.swing.JComboBox<>();
-                textId = new javax.swing.JTextField();
-                textNamaProyek = new javax.swing.JTextField();
-                textLokasi = new javax.swing.JTextField();
-                btnSave = new javax.swing.JButton();
-                jScrollPane5 = new javax.swing.JScrollPane();
-                tableProject = new javax.swing.JTable();
-                comboPic = new javax.swing.JComboBox<>();
-                btnRefresh = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTable3 = new javax.swing.JTable();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jPanel1 = new javax.swing.JPanel();
+        btnEdit = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        btnDell = new javax.swing.JButton();
+        jid = new javax.swing.JLabel();
+        btnClear = new javax.swing.JButton();
+        jnama_proyek = new javax.swing.JLabel();
+        btnExit = new javax.swing.JButton();
+        jlokasi = new javax.swing.JLabel();
+        jpic = new javax.swing.JLabel();
+        jstatus = new javax.swing.JLabel();
+        comboStatus = new javax.swing.JComboBox<>();
+        textId = new javax.swing.JTextField();
+        textNamaProyek = new javax.swing.JTextField();
+        textLokasi = new javax.swing.JTextField();
+        btnSave = new javax.swing.JButton();
+        comboPic = new javax.swing.JComboBox<>();
+        btnRefresh = new javax.swing.JButton();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        tableProject = new javax.swing.JTable();
 
-                jTable1.setModel(new javax.swing.table.DefaultTableModel(
-                                new Object[][] {
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null }
-                                },
-                                new String[] {
-                                                "Title 1", "Title 2", "Title 3", "Title 4"
-                                }));
-                jScrollPane1.setViewportView(jTable1);
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
 
-                jTable2.setModel(new javax.swing.table.DefaultTableModel(
-                                new Object[][] {
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null }
-                                },
-                                new String[] {
-                                                "Title 1", "Title 2", "Title 3", "Title 4"
-                                }));
-                jScrollPane2.setViewportView(jTable2);
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable2);
 
-                jTable3.setModel(new javax.swing.table.DefaultTableModel(
-                                new Object[][] {
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null }
-                                },
-                                new String[] {
-                                                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
-                                }));
-                jScrollPane3.setViewportView(jTable3);
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4", "Title 5"
+            }
+        ));
+        jScrollPane3.setViewportView(jTable3);
 
-                jTable4.setModel(new javax.swing.table.DefaultTableModel(
-                                new Object[][] {
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null },
-                                                { null, null, null, null }
-                                },
-                                new String[] {
-                                                "Title 1", "Title 2", "Title 3", "Title 4"
-                                }));
-                jScrollPane4.setViewportView(jTable4);
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane4.setViewportView(jTable4);
 
-                setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-                setBackground(new java.awt.Color(51, 51, 51));
-                setForeground(new java.awt.Color(51, 51, 51));
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(51, 51, 51));
+        setForeground(new java.awt.Color(51, 51, 51));
 
-                jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-                btnEdit.setBackground(new java.awt.Color(0, 204, 204));
-                btnEdit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnEdit.setForeground(new java.awt.Color(255, 255, 255));
-                btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/edit.png"))); // NOI18N
-                btnEdit.setText("Edit");
-                btnEdit.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnEditActionPerformed(evt);
-                        }
-                });
+        btnEdit.setBackground(new java.awt.Color(0, 204, 204));
+        btnEdit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnEdit.setForeground(new java.awt.Color(255, 255, 255));
+        btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/edit.png"))); // NOI18N
+        btnEdit.setText("Edit");
+        btnEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditActionPerformed(evt);
+            }
+        });
 
-                jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-                jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-                jLabel1.setText("Daftar Proyek");
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Daftar Proyek");
 
-                btnDell.setBackground(new java.awt.Color(0, 204, 204));
-                btnDell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnDell.setForeground(new java.awt.Color(255, 255, 255));
-                btnDell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/delete.png"))); // NOI18N
-                btnDell.setText("Delete");
-                btnDell.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnDellActionPerformed(evt);
-                        }
-                });
+        btnDell.setBackground(new java.awt.Color(0, 204, 204));
+        btnDell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDell.setForeground(new java.awt.Color(255, 255, 255));
+        btnDell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/delete.png"))); // NOI18N
+        btnDell.setText("Delete");
+        btnDell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDellActionPerformed(evt);
+            }
+        });
 
-                jid.setBackground(new java.awt.Color(255, 255, 255));
-                jid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jid.setForeground(new java.awt.Color(255, 255, 255));
-                jid.setText("ID                     :");
+        jid.setBackground(new java.awt.Color(255, 255, 255));
+        jid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jid.setForeground(new java.awt.Color(255, 255, 255));
+        jid.setText("ID                     :");
 
-                btnClear.setBackground(new java.awt.Color(0, 204, 204));
-                btnClear.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnClear.setForeground(new java.awt.Color(255, 255, 255));
-                btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/eraser.png"))); // NOI18N
-                btnClear.setText("Clear");
-                btnClear.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnClearActionPerformed(evt);
-                        }
-                });
+        btnClear.setBackground(new java.awt.Color(0, 204, 204));
+        btnClear.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnClear.setForeground(new java.awt.Color(255, 255, 255));
+        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/eraser.png"))); // NOI18N
+        btnClear.setText("Clear");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
 
-                jnama_proyek.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jnama_proyek.setForeground(new java.awt.Color(255, 255, 255));
-                jnama_proyek.setText("Nama Proyek :");
+        jnama_proyek.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jnama_proyek.setForeground(new java.awt.Color(255, 255, 255));
+        jnama_proyek.setText("Nama Proyek :");
 
-                btnExit.setBackground(new java.awt.Color(0, 204, 204));
-                btnExit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnExit.setForeground(new java.awt.Color(255, 255, 255));
-                btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/logout.png"))); // NOI18N
-                btnExit.setText("Exit");
-                btnExit.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnExitActionPerformed(evt);
-                        }
-                });
+        btnExit.setBackground(new java.awt.Color(0, 204, 204));
+        btnExit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/logout.png"))); // NOI18N
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
-                jlokasi.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jlokasi.setForeground(new java.awt.Color(255, 255, 255));
-                jlokasi.setText("Lokasi              :");
+        jlokasi.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jlokasi.setForeground(new java.awt.Color(255, 255, 255));
+        jlokasi.setText("Lokasi              :");
 
-                jpic.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jpic.setForeground(new java.awt.Color(255, 255, 255));
-                jpic.setText("PIC                   :");
+        jpic.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jpic.setForeground(new java.awt.Color(255, 255, 255));
+        jpic.setText("PIC                   :");
 
-                jstatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                jstatus.setForeground(new java.awt.Color(255, 255, 255));
-                jstatus.setText("Status              :");
+        jstatus.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jstatus.setForeground(new java.awt.Color(255, 255, 255));
+        jstatus.setText("Status              :");
 
-                comboStatus.setModel(new javax.swing.DefaultComboBoxModel<>(
-                                new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-                comboStatus.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                comboStatusActionPerformed(evt);
-                        }
-                });
+        comboStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboStatus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboStatusActionPerformed(evt);
+            }
+        });
 
-                btnSave.setBackground(new java.awt.Color(0, 204, 204));
-                btnSave.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnSave.setForeground(new java.awt.Color(255, 255, 255));
-                btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/floppy-disk.png"))); // NOI18N
-                btnSave.setText("Save");
-                btnSave.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-                btnSave.setIconTextGap(10);
-                btnSave.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnSaveActionPerformed(evt);
-                        }
-                });
+        btnSave.setBackground(new java.awt.Color(0, 204, 204));
+        btnSave.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnSave.setForeground(new java.awt.Color(255, 255, 255));
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/floppy-disk.png"))); // NOI18N
+        btnSave.setText("Save");
+        btnSave.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnSave.setIconTextGap(10);
+        btnSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSaveActionPerformed(evt);
+            }
+        });
 
-                tableProject.setModel(new javax.swing.table.DefaultTableModel(
-                                new Object[][] {
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null },
-                                                { null, null, null, null, null }
-                                },
-                                new String[] {
-                                                "", "", "", "", ""
-                                }));
-                tableProject.addMouseListener(new java.awt.event.MouseAdapter() {
-                        public void mouseClicked(java.awt.event.MouseEvent evt) {
-                                tableProjectMouseClicked(evt);
-                        }
-                });
-                jScrollPane5.setViewportView(tableProject);
+        comboPic.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        comboPic.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboPicActionPerformed(evt);
+            }
+        });
 
-                comboPic.setModel(new javax.swing.DefaultComboBoxModel<>(
-                                new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-                comboPic.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                comboPicActionPerformed(evt);
-                        }
-                });
+        btnRefresh.setBackground(new java.awt.Color(0, 204, 204));
+        btnRefresh.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
+        btnRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/refresh.png"))); // NOI18N
+        btnRefresh.setText("Refresh");
+        btnRefresh.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnRefresh.setIconTextGap(10);
+        btnRefresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRefreshActionPerformed(evt);
+            }
+        });
 
-                btnRefresh.setBackground(new java.awt.Color(0, 204, 204));
-                btnRefresh.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-                btnRefresh.setForeground(new java.awt.Color(255, 255, 255));
-                btnRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/refresh.png"))); // NOI18N
-                btnRefresh.setText("Refresh");
-                btnRefresh.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-                btnRefresh.setIconTextGap(10);
-                btnRefresh.addActionListener(new java.awt.event.ActionListener() {
-                        public void actionPerformed(java.awt.event.ActionEvent evt) {
-                                btnRefreshActionPerformed(evt);
-                        }
-                });
+        tableProject.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "", "", "", "", ""
+            }
+        ));
+        tableProject.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableProjectMouseClicked(evt);
+            }
+        });
+        jScrollPane5.setViewportView(tableProject);
 
-                javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-                jPanel1.setLayout(jPanel1Layout);
-                jPanel1Layout.setHorizontalGroup(
-                                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addGap(48, 48, 48)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.TRAILING)
-                                                                                .addGroup(jPanel1Layout
-                                                                                                .createSequentialGroup()
-                                                                                                .addGroup(jPanel1Layout
-                                                                                                                .createParallelGroup(
-                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                .createSequentialGroup()
-                                                                                                                                .addComponent(btnSave)
-                                                                                                                                .addGap(18, 18, 18)
-                                                                                                                                .addComponent(btnEdit,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                87,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                                                .addGap(18, 18, 18)
-                                                                                                                                .addComponent(btnDell,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                93,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                                                .addGap(18, 18, 18)
-                                                                                                                                .addComponent(btnClear,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                87,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                                                                .addPreferredGap(
-                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                                                                                                16,
-                                                                                                                                                Short.MAX_VALUE)
-                                                                                                                                .addComponent(btnExit,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                87,
-                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING,
-                                                                                                                                jPanel1Layout.createSequentialGroup()
-                                                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                                                .createParallelGroup(
-                                                                                                                                                                                javax.swing.GroupLayout.Alignment.TRAILING,
-                                                                                                                                                                                false)
-                                                                                                                                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                                                                jPanel1Layout.createSequentialGroup()
-                                                                                                                                                                                                .addComponent(jnama_proyek)
-                                                                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                                                                                                                .addComponent(textNamaProyek))
-                                                                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                                .addComponent(jid)
-                                                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                                                                                                .addComponent(textId,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                                                                127,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                                                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING,
-                                                                                                                                                                                jPanel1Layout.createSequentialGroup()
-                                                                                                                                                                                                .addComponent(jlokasi)
-                                                                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                                                                                                                .addComponent(textLokasi,
-                                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                                                                                126,
-                                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-                                                                                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                                                                                Short.MAX_VALUE)
-                                                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                                                .createParallelGroup(
-                                                                                                                                                                                javax.swing.GroupLayout.Alignment.LEADING)
-                                                                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                                .addComponent(jpic)
-                                                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                                                                                                .addComponent(comboPic,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                                                                126,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                                                                                                                .addGroup(jPanel1Layout
-                                                                                                                                                                                .createSequentialGroup()
-                                                                                                                                                                                .addComponent(jstatus)
-                                                                                                                                                                                .addPreferredGap(
-                                                                                                                                                                                                javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                                                                                                                                                .addComponent(comboStatus,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                                                                                                                126,
-                                                                                                                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                                                                                .addGap(54, 54, 54))
-                                                                                .addGroup(jPanel1Layout
-                                                                                                .createSequentialGroup()
-                                                                                                .addGap(0, 0, Short.MAX_VALUE)
-                                                                                                .addComponent(jLabel1)
-                                                                                                .addGap(81, 81, 81)
-                                                                                                .addComponent(btnRefresh)
-                                                                                                .addGap(36, 36, 36))))
-                                                .addComponent(jScrollPane5));
-                jPanel1Layout.setVerticalGroup(
-                                jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                                                .addGap(22, 22, 22)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jLabel1)
-                                                                                .addComponent(btnRefresh,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                43,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(49, 49, 49)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jid)
-                                                                                .addComponent(textId,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(jpic)
-                                                                                .addComponent(comboPic,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(18, 18, 18)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jnama_proyek)
-                                                                                .addComponent(jstatus)
-                                                                                .addComponent(textNamaProyek,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(comboStatus,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(20, 20, 20)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(jlokasi)
-                                                                                .addComponent(textLokasi,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(50, 50, 50)
-                                                                .addGroup(jPanel1Layout.createParallelGroup(
-                                                                                javax.swing.GroupLayout.Alignment.BASELINE)
-                                                                                .addComponent(btnSave)
-                                                                                .addComponent(btnEdit,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                26,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnDell,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                26,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnClear,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                26,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                                .addComponent(btnExit,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                                26,
-                                                                                                javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                                .addGap(18, 18, Short.MAX_VALUE)
-                                                                .addComponent(jScrollPane5,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE,
-                                                                                127,
-                                                                                javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                                .addGap(217, 217, 217)));
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(48, 48, 48)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnSave)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
+                                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jnama_proyek)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textNamaProyek))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jid)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textId, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jlokasi)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textLokasi, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jpic)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(comboPic, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jstatus)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(comboStatus, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(54, 54, 54))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(81, 81, 81)
+                        .addComponent(btnRefresh)
+                        .addGap(36, 36, 36))))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane5)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(22, 22, 22)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(btnRefresh, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(49, 49, 49)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jid)
+                    .addComponent(textId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpic)
+                    .addComponent(comboPic, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jnama_proyek)
+                    .addComponent(jstatus)
+                    .addComponent(textNamaProyek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(comboStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(20, 20, 20)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jlokasi)
+                    .addComponent(textLokasi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48))
+        );
 
-                javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-                getContentPane().setLayout(layout);
-                layout.setHorizontalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
-                                                                javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
-                layout.setVerticalGroup(
-                                layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 426,
-                                                                javax.swing.GroupLayout.PREFERRED_SIZE));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
-                pack();
-        }// </editor-fold>//GEN-END:initComponents
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
 
         private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnEditActionPerformed
                 // TODO add your handling code here:
@@ -724,34 +649,34 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
                 });
         }
 
-        // Variables declaration - do not modify//GEN-BEGIN:variables
-        private javax.swing.JButton btnClear;
-        private javax.swing.JButton btnDell;
-        private javax.swing.JButton btnEdit;
-        private javax.swing.JButton btnExit;
-        private javax.swing.JButton btnRefresh;
-        private javax.swing.JButton btnSave;
-        private javax.swing.JComboBox<String> comboPic;
-        private javax.swing.JComboBox<String> comboStatus;
-        private javax.swing.JLabel jLabel1;
-        private javax.swing.JPanel jPanel1;
-        private javax.swing.JScrollPane jScrollPane1;
-        private javax.swing.JScrollPane jScrollPane2;
-        private javax.swing.JScrollPane jScrollPane3;
-        private javax.swing.JScrollPane jScrollPane4;
-        private javax.swing.JScrollPane jScrollPane5;
-        private javax.swing.JTable jTable1;
-        private javax.swing.JTable jTable2;
-        private javax.swing.JTable jTable3;
-        private javax.swing.JTable jTable4;
-        private javax.swing.JLabel jid;
-        private javax.swing.JLabel jlokasi;
-        private javax.swing.JLabel jnama_proyek;
-        private javax.swing.JLabel jpic;
-        private javax.swing.JLabel jstatus;
-        private javax.swing.JTable tableProject;
-        private javax.swing.JTextField textId;
-        private javax.swing.JTextField textLokasi;
-        private javax.swing.JTextField textNamaProyek;
-        // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnDell;
+    private javax.swing.JButton btnEdit;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnRefresh;
+    private javax.swing.JButton btnSave;
+    private javax.swing.JComboBox<String> comboPic;
+    private javax.swing.JComboBox<String> comboStatus;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTable2;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JLabel jid;
+    private javax.swing.JLabel jlokasi;
+    private javax.swing.JLabel jnama_proyek;
+    private javax.swing.JLabel jpic;
+    private javax.swing.JLabel jstatus;
+    private javax.swing.JTable tableProject;
+    private javax.swing.JTextField textId;
+    private javax.swing.JTextField textLokasi;
+    private javax.swing.JTextField textNamaProyek;
+    // End of variables declaration//GEN-END:variables
 }

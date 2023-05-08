@@ -59,24 +59,30 @@ public class qa_ui extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
-        btnEdit = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        btnDell = new javax.swing.JButton();
         jid = new javax.swing.JLabel();
-        btnClear = new javax.swing.JButton();
         jnama_proyek = new javax.swing.JLabel();
-        btnExit = new javax.swing.JButton();
         btnRefresh = new javax.swing.JButton();
         jstart_date = new javax.swing.JLabel();
         comboNamaProyek = new javax.swing.JComboBox<>();
         textNo = new javax.swing.JTextField();
-        btnSave = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
-        tableBast = new javax.swing.JTable();
+        tableQA = new javax.swing.JTable();
         dateBast = new com.toedter.calendar.JDateChooser();
         jpekerjaan1 = new javax.swing.JLabel();
-        textLampiran = new javax.swing.JTextField();
+        textItem_Tes = new javax.swing.JTextField();
         labelLampiran = new javax.swing.JLabel();
+        textPICQA = new javax.swing.JTextField();
+        jid1 = new javax.swing.JLabel();
+        textStatus = new javax.swing.JTextField();
+        jpekerjaan2 = new javax.swing.JLabel();
+        jid2 = new javax.swing.JLabel();
+        textketerangan = new javax.swing.JTextField();
+        btnSave = new javax.swing.JButton();
+        btnEdit = new javax.swing.JButton();
+        btnDell = new javax.swing.JButton();
+        btnClear = new javax.swing.JButton();
+        btnExit = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -136,62 +142,18 @@ public class qa_ui extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(51, 51, 51));
 
-        btnEdit.setBackground(new java.awt.Color(0, 204, 204));
-        btnEdit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnEdit.setForeground(new java.awt.Color(255, 255, 255));
-        btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/edit.png"))); // NOI18N
-        btnEdit.setText("Edit");
-        btnEdit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEditActionPerformed(evt);
-            }
-        });
-
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("QA");
 
-        btnDell.setBackground(new java.awt.Color(0, 204, 204));
-        btnDell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnDell.setForeground(new java.awt.Color(255, 255, 255));
-        btnDell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/delete.png"))); // NOI18N
-        btnDell.setText("Delete");
-        btnDell.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDellActionPerformed(evt);
-            }
-        });
-
         jid.setBackground(new java.awt.Color(255, 255, 255));
         jid.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jid.setForeground(new java.awt.Color(255, 255, 255));
-        jid.setText("ID                     :");
-
-        btnClear.setBackground(new java.awt.Color(0, 204, 204));
-        btnClear.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnClear.setForeground(new java.awt.Color(255, 255, 255));
-        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/eraser.png"))); // NOI18N
-        btnClear.setText("Clear");
-        btnClear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClearActionPerformed(evt);
-            }
-        });
+        jid.setText("PIC QA              :");
 
         jnama_proyek.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jnama_proyek.setForeground(new java.awt.Color(255, 255, 255));
-        jnama_proyek.setText("Nama Proyek :");
-
-        btnExit.setBackground(new java.awt.Color(0, 204, 204));
-        btnExit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnExit.setForeground(new java.awt.Color(255, 255, 255));
-        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/logout.png"))); // NOI18N
-        btnExit.setText("Exit");
-        btnExit.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnExitActionPerformed(evt);
-            }
-        });
+        jnama_proyek.setText("Nama Proyek   :");
 
         btnRefresh.setBackground(new java.awt.Color(0, 204, 204));
         btnRefresh.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -212,6 +174,55 @@ public class qa_ui extends javax.swing.JFrame {
 
         comboNamaProyek.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        tableQA.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "", "", "", "", "", "", ""
+            }
+        ));
+        tableQA.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tableQAMouseClicked(evt);
+            }
+        });
+        jScrollPane5.setViewportView(tableQA);
+
+        jpekerjaan1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jpekerjaan1.setForeground(new java.awt.Color(255, 255, 255));
+        jpekerjaan1.setText("Item Tes          :");
+
+        jid1.setBackground(new java.awt.Color(255, 255, 255));
+        jid1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jid1.setForeground(new java.awt.Color(255, 255, 255));
+        jid1.setText("NO                     :");
+
+        jpekerjaan2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jpekerjaan2.setForeground(new java.awt.Color(255, 255, 255));
+        jpekerjaan2.setText("Status               :");
+
+        jid2.setBackground(new java.awt.Color(255, 255, 255));
+        jid2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jid2.setForeground(new java.awt.Color(255, 255, 255));
+        jid2.setText("Keterangan      :");
+
+        textketerangan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                textketeranganActionPerformed(evt);
+            }
+        });
+
         btnSave.setBackground(new java.awt.Color(0, 204, 204));
         btnSave.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         btnSave.setForeground(new java.awt.Color(255, 255, 255));
@@ -225,27 +236,49 @@ public class qa_ui extends javax.swing.JFrame {
             }
         });
 
-        tableBast.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "", "", "", ""
-            }
-        ));
-        tableBast.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tableBastMouseClicked(evt);
+        btnEdit.setBackground(new java.awt.Color(0, 204, 204));
+        btnEdit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnEdit.setForeground(new java.awt.Color(255, 255, 255));
+        btnEdit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/edit.png"))); // NOI18N
+        btnEdit.setText("Edit");
+        btnEdit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEditActionPerformed(evt);
             }
         });
-        jScrollPane5.setViewportView(tableBast);
 
-        jpekerjaan1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jpekerjaan1.setForeground(new java.awt.Color(255, 255, 255));
-        jpekerjaan1.setText("Lampiran       :");
+        btnDell.setBackground(new java.awt.Color(0, 204, 204));
+        btnDell.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnDell.setForeground(new java.awt.Color(255, 255, 255));
+        btnDell.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/delete.png"))); // NOI18N
+        btnDell.setText("Delete");
+        btnDell.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDellActionPerformed(evt);
+            }
+        });
+
+        btnClear.setBackground(new java.awt.Color(0, 204, 204));
+        btnClear.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnClear.setForeground(new java.awt.Color(255, 255, 255));
+        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/eraser.png"))); // NOI18N
+        btnClear.setText("Clear");
+        btnClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnClearActionPerformed(evt);
+            }
+        });
+
+        btnExit.setBackground(new java.awt.Color(0, 204, 204));
+        btnExit.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        btnExit.setForeground(new java.awt.Color(255, 255, 255));
+        btnExit.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar_icon/logout.png"))); // NOI18N
+        btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -254,46 +287,59 @@ public class qa_ui extends javax.swing.JFrame {
             .addComponent(jScrollPane5)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(48, 48, 48)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnSave)
-                        .addGap(29, 29, 29)
-                        .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                             .addComponent(jLabel1)
                             .addGap(129, 129, 129)
                             .addComponent(btnRefresh))
                         .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                                     .addComponent(jnama_proyek)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(comboNamaProyek, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jid)
+                                    .addComponent(jid, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(textPICQA, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jid1)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                     .addComponent(textNo, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGap(72, 72, 72)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jstart_date)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(dateBast, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
+                                    .addComponent(jpekerjaan2)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(textStatus))
+                                .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addComponent(jpekerjaan1)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                    .addComponent(textLampiran))
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(jstart_date)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(dateBast, javax.swing.GroupLayout.PREFERRED_SIZE, 127, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(229, 229, 229)
-                        .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(32, 32, 32)
-                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                                    .addComponent(textItem_Tes, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(109, 109, 109)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jid2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(btnSave)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(textketerangan))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(labelLampiran, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -307,8 +353,8 @@ public class qa_ui extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(jid)
-                                .addComponent(textNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(textNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jid1))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(jstart_date)
                                 .addComponent(dateBast, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -317,49 +363,79 @@ public class qa_ui extends javax.swing.JFrame {
                             .addComponent(jnama_proyek)
                             .addComponent(comboNamaProyek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jpekerjaan1)
-                            .addComponent(textLampiran, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(68, 68, 68)
+                            .addComponent(textItem_Tes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(textPICQA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jid)
+                            .addComponent(jpekerjaan2)
+                            .addComponent(textStatus, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(btnSave)
-                                .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(textketerangan, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jid2)))
                     .addComponent(labelLampiran, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(36, 36, 36)
-                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(21, 21, 21)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnSave)
+                    .addComponent(btnEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDell, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 186, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(21, 21, 21))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-        private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnRefreshActionPerformed
-                // TODO add your handling code here:
-                loadData();
-                loadTable();
-                textNo.setText("");
-                comboNamaProyek.setSelectedIndex(0);
-                textLampiran.setText("");
-                dateBast.setDate(null);
-                labelLampiran.setIcon(null);
-        }// GEN-LAST:event_btnRefreshActionPerformed
+    private void tableQAMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tableQAMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tableQAMouseClicked
 
-        private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnExitActionPerformed
-                // TODO add your handling code here:
-                dispose();
-        }// GEN-LAST:event_btnExitActionPerformed
+    private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnRefreshActionPerformed
+
+    private void textketeranganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textketeranganActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_textketeranganActionPerformed
+
+    private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSaveActionPerformed
+
+    private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnEditActionPerformed
+
+    private void btnDellActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDellActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDellActionPerformed
+
+    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnClearActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitActionPerformed
 
         private void btnLampiranActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnLampiranActionPerformed
                 // TODO add your handling code here:
@@ -374,7 +450,7 @@ public class qa_ui extends javax.swing.JFrame {
                         String filename = f.getAbsolutePath();
                         String fileType = chooser.getTypeDescription(f);
                 
-                        textLampiran.setText(filename);
+                        textItem_Tes.setText(filename);
                         ImageIcon imageIcon = new ImageIcon(
                                         new ImageIcon(filename).getImage().getScaledInstance(labelLampiran.getWidth(),
                                                         labelLampiran.getHeight(), Image.SCALE_DEFAULT));
@@ -384,111 +460,14 @@ public class qa_ui extends javax.swing.JFrame {
                 }
         }// GEN-LAST:event_btnLampiranActionPerformed
 
-        private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnSaveActionPerformed
-                // TODO add your handling code here:
-                java.sql.Connection con;
-                PreparedStatement p;
-                try {
-                        con = koneksi.getKoneksi();
-                        p = (PreparedStatement) con.prepareStatement(
-                                        "insert into bast(Nama_Project,Tanggal,lampiran,File_Name) values(?,?,?,?)");
-                        p.setString(1, comboNamaProyek.getSelectedItem().toString());
-                        p.setDate(2, new java.sql.Date(dateBast.getDate().getTime()));
-                        String dir = textLampiran.getText();
-                        File file = new File(dir);
-                        FileInputStream fi = new FileInputStream(file);
-                        p.setBinaryStream(3, fi, (int) file.length());
-                        p.setString(4, file.getName());
-                        p.executeUpdate();
-                        JOptionPane.showMessageDialog(null, "Data Berhasil Disimpan");
-                        String sql = "update master_project set Status='Selesai' where Nama_Project='"
-                                        + comboNamaProyek.getSelectedItem().toString() + "'";
-                        p = (PreparedStatement) con.prepareStatement(sql);
-                        p.executeUpdate();
-                        textNo.setText("");
-                        comboNamaProyek.setSelectedIndex(0);
-                        textLampiran.setText("");
-                        dateBast.setDate(null);
-                        loadTable();
-                        labelLampiran.setIcon(null);
-                } catch (Exception e) {
-                        JOptionPane.showMessageDialog(null, "Data Gagal Disimpan");
-                }
-        }// GEN-LAST:event_btnSaveActionPerformed
-
-        private void btnEditActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnEditActionPerformed
-                // TODO add your handling code here:
-                java.sql.Connection con;
-                PreparedStatement p;
-                try {
-                        con = koneksi.getKoneksi();
-                        p = (PreparedStatement) con.prepareStatement(
-                                        "update bast set Tanggal=? where ID=?");
-                        p.setDate(1, new java.sql.Date(dateBast.getDate().getTime()));
-                        p.setString(2, textNo.getText());
-                        p.executeUpdate();
-                        JOptionPane.showMessageDialog(null, "Data Berhasil Diubah");
-                        textNo.setText("");
-                        comboNamaProyek.setSelectedIndex(0);
-                        textLampiran.setText("");
-                        dateBast.setDate(null);
-                        loadTable();
-                        labelLampiran.setIcon(null);
-                } catch (Exception e) {
-                        JOptionPane.showMessageDialog(null, "Data Gagal Diubah");
-                }
-        }// GEN-LAST:event_btnEditActionPerformed
-
-        private void btnDellActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnDellActionPerformed
-                // TODO add your handling code here:
-                java.sql.Connection con;
-                PreparedStatement p;
-                try {
-                        con = koneksi.getKoneksi();
-                        p = (PreparedStatement) con.prepareStatement(
-                                        "delete from bast where ID=?");
-                        p.setString(1, textNo.getText());
-                        p.executeUpdate();
-                        JOptionPane.showMessageDialog(null, "Data Berhasil Dihapus");
-                        String sql = "update master_project set Status ='On Progress' where Nama_Project ='"
-                                        + comboNamaProyek.getSelectedItem().toString() + "'";
-                        p = (PreparedStatement) con.prepareStatement(sql);
-                        p.executeUpdate();
-                        textNo.setText("");
-                        comboNamaProyek.setSelectedIndex(0);
-                        textLampiran.setText("");
-                        dateBast.setDate(null);
-                        loadTable();
-                        con.close();
-                } catch (Exception e) {
-                        JOptionPane.showMessageDialog(null, "Data Gagal Dihapus");
-                }
-        }// GEN-LAST:event_btnDellActionPerformed
-
-        private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnClearActionPerformed
-                // TODO add your handling code here:
-                textNo.setText("");
-                comboNamaProyek.setSelectedIndex(0);
-                textLampiran.setText("");
-                dateBast.setDate(null);
-                labelLampiran.setIcon(null);
-        }// GEN-LAST:event_btnClearActionPerformed
-
-        private void btnUnduhActionPerformed(java.awt.event.ActionEvent evt) {// GEN-FIRST:event_btnUnduhActionPerformed
-                // TODO add your handling code here:
-
-                // download file from database
-
-        }// GEN-LAST:event_btnUnduhActionPerformed
-
         private void tableBastMouseClicked(java.awt.event.MouseEvent evt) {// GEN-FIRST:event_tableBastMouseClicked
                 // TODO add your handling code here:
-                int row = tableBast.getSelectedRow();
-                String no = tableBast.getValueAt(row, 0).toString();
-                textNo.setText(tableBast.getValueAt(row, 0).toString());
-                comboNamaProyek.setSelectedItem(tableBast.getValueAt(row, 1).toString());
-                textLampiran.setText(tableBast.getValueAt(row, 3).toString());
-                String date = tableBast.getValueAt(row, 2).toString();
+                int row = tableQA.getSelectedRow();
+                String no = tableQA.getValueAt(row, 0).toString();
+                textNo.setText(tableQA.getValueAt(row, 0).toString());
+                comboNamaProyek.setSelectedItem(tableQA.getValueAt(row, 1).toString());
+                textItem_Tes.setText(tableQA.getValueAt(row, 3).toString());
+                String date = tableQA.getValueAt(row, 2).toString();
                 try {
                         DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
                         Date date1 = format.parse(date);
@@ -568,7 +547,7 @@ public class qa_ui extends javax.swing.JFrame {
                 model.addColumn("Nama Proyek");
                 model.addColumn("Tanggal");
                 model.addColumn("File Name");
-                tableBast.setModel(model);
+                tableQA.setModel(model);
                 try {
                         java.sql.Connection con = koneksi.getKoneksi();
                         Statement stmt = (Statement) con.createStatement();
@@ -717,12 +696,18 @@ public class qa_ui extends javax.swing.JFrame {
     private javax.swing.JTable jTable3;
     private javax.swing.JTable jTable4;
     private javax.swing.JLabel jid;
+    private javax.swing.JLabel jid1;
+    private javax.swing.JLabel jid2;
     private javax.swing.JLabel jnama_proyek;
     private javax.swing.JLabel jpekerjaan1;
+    private javax.swing.JLabel jpekerjaan2;
     private javax.swing.JLabel jstart_date;
     private javax.swing.JLabel labelLampiran;
-    private javax.swing.JTable tableBast;
-    private javax.swing.JTextField textLampiran;
+    private javax.swing.JTable tableQA;
+    private javax.swing.JTextField textItem_Tes;
     private javax.swing.JTextField textNo;
+    private javax.swing.JTextField textPICQA;
+    private javax.swing.JTextField textStatus;
+    private javax.swing.JTextField textketerangan;
     // End of variables declaration//GEN-END:variables
 }

@@ -370,7 +370,7 @@ public class dashboard_ui extends javax.swing.JFrame {
             btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(true);
         } else if (ulv.equals("teknisi")) {
-            btnQA.setEnabled(false);
+            btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(false);
         } else if (ulv.equals("ceo")) {
             btnQA.setEnabled(true);
