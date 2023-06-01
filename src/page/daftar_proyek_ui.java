@@ -612,16 +612,16 @@ public class daftar_proyek_ui extends javax.swing.JFrame {
         System.out.println(ulv);
         // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
 
-        if (ulv.equals("admin")) {
+        if (ulv.equals("Project Manager")) {
             btnSave.setEnabled(true);
             btnDell.setEnabled(true);
             btnEdit.setEnabled(true);
 
-        } else if (ulv.equals("teknisi")) {
+        } else if (ulv.equals("Teknisi")) {
             btnSave.setEnabled(false);
             btnDell.setEnabled(false);
             btnEdit.setEnabled(false);
-        } else if (ulv.equals("ceo")) {
+        } else if (ulv.equals("Head Division")) {
             btnSave.setEnabled(false);
             btnDell.setEnabled(false);
             btnEdit.setEnabled(false);

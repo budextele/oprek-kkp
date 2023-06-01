@@ -1,0 +1,11 @@
+graph {
+	User [shape=actor]
+	Admin [shape=actor]
+	Login [shape=rectangle]
+	"Buat Akun" [shape=rectangle]
+	"Edit Profil" [shape=rectangle]
+	User -- Login
+	User -- "Buat Akun"
+	User -- "Edit Profil"
+	Admin -- "Edit Profil"
+}

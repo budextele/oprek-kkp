@@ -360,18 +360,18 @@ public class dashboard_ui extends javax.swing.JFrame {
 
     public void loadData() {
         // String ulv = userSession.getUserLevel();
-        System.out.println(ulv);
+        //System.out.println(ulv);
         // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
-        textUserLevel.setText("Anda login sebagai " + ulv);
+        textUserLevel.setText("Login sebagai " + ulv);
         textUserLevel.setEditable(false);
 
-        if (ulv.equals("admin")) {
+        if (ulv.equals("Project Manager")) {
             btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(true);
-        } else if (ulv.equals("teknisi")) {
+        } else if (ulv.equals("Teknisi")) {
             btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(false);
-        } else if (ulv.equals("ceo")) {
+        } else if (ulv.equals("Head Division")) {
             btnQA.setEnabled(true);
             btnHalamanReport.setEnabled(true);
         }

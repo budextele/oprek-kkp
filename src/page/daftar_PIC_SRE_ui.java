@@ -548,17 +548,17 @@ public class daftar_PIC_SRE_ui extends javax.swing.JFrame {
         System.out.println(ulv);
         // JOptionPane.showMessageDialog(null, "anda login sebgai " + ulv);
         switch (ulv) {
-            case "admin":
+            case "Project Manager":
                 btnSave.setEnabled(true);
                 btnDell.setEnabled(true);
                 btnEdit.setEnabled(true);
                 break;
-            case "teknisi":
+            case "Teknisi":
                 btnSave.setEnabled(false);
                 btnDell.setEnabled(false);
                 btnEdit.setEnabled(false);
                 break;
-            case "ceo":
+            case "Head Division":
                 btnSave.setEnabled(false);
                 btnDell.setEnabled(false);
                 btnEdit.setEnabled(false);
